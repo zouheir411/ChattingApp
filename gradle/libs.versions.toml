@@ -1,0 +1,38 @@
+[versions]
+agp = "8.5.0"
+firebaseBom = "33.1.2"
+junit = "4.13.2"
+junitVersion = "1.2.0"
+espressoCore = "3.6.0"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+sdp-android = "1.0.6"
+ssp-android = "1.0.6"
+roundedimageview = "2.3.0"
+kotlin = "1.9.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseMessaging = "24.0.0"
+firebaseFirestore = "25.0.0"  # for roundedImageView (Aplying the property for rounded-Oval Shapes for imageviews and or DRawable resc
+
+[libraries]
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+google-firebase-messaging = { module = "com.google.firebase:firebase-messaging" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+sdp = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp-android" }
+ssp = { group = "com.intuit.ssp", name = "ssp-android", version.ref = "ssp-android" }
+roundedimageview = { group = "com.makeramen", name = "roundedimageview", version.ref = "roundedimageview" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
